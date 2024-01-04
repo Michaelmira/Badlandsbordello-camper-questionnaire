@@ -1,0 +1,301 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Badlands Bordello Homepage</title>
+</head>
+<body>
+  <!-- Navbar-Start -->
+    <nav class="navbar navbar-expand-lg bg-light mb-2 pt-1 pb-0">
+        <div class="container-fluid">
+          <span class="navbar-brand text-black"
+            <p class="fw-light" style="font-family:Pacifico"> Badlands Bordello</p>
+          </span>
+          <form>
+            <div class="row">
+              <div class="col-md-auto">
+                <button type="button" class="btn btn-success text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Create new Post
+                </button>
+                <button type="button" class="btn btn-success text-white btn-sm" onclick="showAlert()">
+                  Show Alert
+                </button>
+                <button type="button" class="btn btn-success text-white btn-sm" onclick="showAnotherAlert()">
+                  Show Alert 2
+                </button>
+  
+              </div>
+              <div class="col-md-auto">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle border btn-secondary text-light btn-sm pt-0 pb-0 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear pt-2 pb-2"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Security and Data</a></li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+  <!-- Modal-Start -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group mb-2 mt-0">
+                <form class="mb-1">
+                  <label for="exampleInputEmail1">Caption:</label>
+                </form>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add the caption of your post here">
+              </div>
+              <i class="fas fa-camera fa-1x border btn"></i>
+              <i class="fas fa-map-marker-alt fa-1x border btn"></i>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-End -->
+    </nav>
+<!-- Navbar-End -->
+<!-- PILL-Start -->
+<div class="container-fluid p-0">
+  <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Camper Questionnaire</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Gallery</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <!-- Camper Questionnaire-Start -->
+    <div class="tab-pane fade show active mt-1" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <!-- Card-Start -->
+      <div class="container justify-content-center text-center d-flex">
+      
+        <div class="card mb-3 border border-0" style="max-width: 1000px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://picsum.photos/750/750?random=4" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card-End -->
+      <!-- Form-Start -->
+      <div class="container pt-4">
+        <div class="card">
+            <!-- Header -->
+            <div class="card-header">
+              <strong class="fs-4">Badlands Bordello Camper Application</strong>
+            </div>
+            <!-- Header -->
+            <!-- Danger Alert -->
+            <div class="container pt-4">
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+            </div>
+            <!-- Danger Alert -->
+            <!-- Card # CVC Amount Inputs -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="card-text"><strong>Full Name</strong></div>
+                        <div class="row">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="First, Last." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cvc-text"><strong> Phone Number </strong></div>
+                        <div class="row">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="(000)000-0000" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="amount-text"><strong>Burner Account Email</strong></div>
+                        <div class="row">
+                            <div class="input-group mb-3">
+                                <strong>$</strong><input type="text" class="form-control" placeholder="Burner Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card # CVC Amount Inputs -->
+            <!-- First Name & Last Name Inputs -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class= "pb-2"><strong>Names Of Campers In Your Dwelling</strong></div>
+                        <input type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                    </div>
+                    <div class="col-6">
+                        <div class="pb-2"><strong>Space requirement for Dwelling, Cars, RV, Etc.</strong></div>
+                        <input type="text" class="form-control"  aria-label="Recipient's username" placeholder="ex. 1 car 1 Truck 1 trailer 24ft Kodiak Tent 10by14ft " aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+            <!-- First Name & Last Name Inputs -->
+            <!-- City State(Dropdown), Postal Code -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="pb-2 pt-2"><strong>City</strong></div>
+                        <input type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                    </div>
+                    <div class="col-3 pt-2">
+                        <label for="Camp Mandatory Donation" class="form-label "><strong>Camp Manditory Donation Per/Human</strong></label>
+                                        <select name="state" id="state2" class="form-select">
+                                            <option selected>Pick a Option</option>
+                                            <option value="value1">Early Arrival, Build, Strike 350$</option>
+                                            <option value="value2">Early Arrival, Build, NO STRIKE 450$</option>
+                                            <option value="value3">Strike ONLY 450$</option>
+                                            <option value="value3">NO WORK 550$</option>
+                                          </select>
+                    </div>
+                    <div class="col-3">
+                        <div class="pb-2 pt-2"><strong>Early Arrival? Yes/No + How Many </strong></div>
+                        <input type="text" class="form-control" placeholder="Yes 3 Friday Aug 23rd or No"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+            <!-- City State(Dropdown), Postal Code -->
+            <!--We accept: and Message:-->
+            <div class="container pt-2 pb-3"> 
+                <div class="row">
+                    <div class="col-6">
+                        <div class="col-6">
+                            <!-- <div class="col-md-auto">
+                                <label for="We-accept" class="form-label "><strong>We accept:</strong></label>
+                                    <div class="card-box row bg-secondary rounded-2 pt-1 pb-1">
+                                        <div class="visa-card col-md-auto"><input type="radio" name="color" value="visa" />
+                                            <i class="fa-brands fa-cc-visa"></i>
+                                        </div>
+                                        <div class="amex-card col-md-auto"><input type="radio" name="color" value="amex" />
+                                            <i class="fa-brands fa-cc-amex"></i>
+                                        </div>
+                                        <div class="diners-card col-md-auto"><input type="radio" name="color" value="diners club" />
+                                            <i class="fa-brands fa-cc-diners-club"></i>
+                                        </div>
+                                        <div class="master-card col-md-auto"><input type="radio" name="color" value="mastercard" />
+                                            <i class="fa-brands fa-cc-mastercard"></i>
+                                        </div>
+                                    </div>
+                            </div> -->
+                        </div>
+                        <div class="col-6"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="col-md-auto">
+                            <p><strong>Why do you want to go to Burning Man?</strong>
+                            </p>
+                            <textarea  class="comments form-control" rows="4"></textarea>
+                        </div>
+                        <p class="pt-2"> <strong>Mandatory Donations</strong> </p>
+                        <p> 2 Handles, 4 Chasers for Bar </p>
+                        <p> 5 Gallons water for Bar </p>
+                        <p> 2 Camp Shifts </p>
+                        <p> 2 Events Shifts </p>
+                      
+
+                    </div>
+                </div>
+            </div>
+            <!--We accept: and Message:-->
+            <!-- Footer  -->
+            <div class="container pb-2 bg-light border">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-2">
+                    <button class="btn btn-success me-md-2" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="button">Send</button>
+                </div>
+            </div>
+            <!-- Footer -->
+        </div>
+      </div>
+      <!-- Form-End -->
+    </div>
+    <!-- Camper Questionnaire-End -->
+    <!-- Gallery-Start -->
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?random=4" </img>
+            </div>
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?random=5
+              " </img>
+            </div>
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?random=3" </img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?random=1" </img>
+            </div>
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?random=6" </img>
+            </div>
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?blur
+              " </img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?random=7
+              " </img>
+            </div>
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?random=2" </img>
+            </div>
+            <div class="col border p-0 pb-1">
+              <img src="https://picsum.photos/508/508?grayscale" </img>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Gallery-End -->
+  </div>
+</div>
+<!-- PILL-End -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="validators.js"></script>
+</html>

@@ -111,6 +111,7 @@
       <!-- Card-End -->
       <!-- Form-Start -->
       <div class="container pt-4">
+        <form id="badlands-form">
         <div class="card">
             <!-- Header -->
             <div class="card-header">
@@ -128,18 +129,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-5">
-                        <div class="card-text"><strong>Full Name</strong></div>
+                        <div class="card-text" ></div><strong>Full Name</strong></div>
                         <div class="row">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="First, Last." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input type="text" name="full-name" class="form-control" placeholder="First, Last." aria-label="Recipient's username" aria-describedby="basic-addon2">
                               </div>
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="cvc-text"><strong> Phone Number </strong></div>
+                        <div class="cvc-text" ><strong> Phone Number </strong></div>
                         <div class="row">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="(000)000-0000" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input type="text" name="phone" class="form-control" placeholder="(000)000-0000" aria-label="Recipient's username" aria-describedby="basic-addon2">
                             </div>
                         </div>
                     </div>
@@ -147,7 +148,7 @@
                         <div class="amount-text"><strong>Burner Account Email</strong></div>
                         <div class="row">
                             <div class="input-group mb-3">
-                                <strong>$</strong><input type="text" class="form-control" placeholder="Burner Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <strong>$</strong><input type="text" name="email-address" class="form-control" placeholder="Burner Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
                             </div>
                         </div>
                     </div>
@@ -158,13 +159,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <div class= "pb-2"><strong>Names Of Campers In Your Dwelling</strong></div>
-                        <input type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class= "pb-2" ><strong>Names Of Campers In Your Dwelling</strong></div>
+                        <input type="text" class="form-control" name="number-campers" aria-label="Recipient's username" aria-describedby="basic-addon2">
 
                     </div>
                     <div class="col-6">
                         <div class="pb-2"><strong>Space requirement for Dwelling, Cars, RV, Etc.</strong></div>
-                        <input type="text" class="form-control"  aria-label="Recipient's username" placeholder="ex. 1 car 1 Truck 1 trailer 24ft Kodiak Tent 10by14ft " aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" name="space-requirement" aria-label="Recipient's username" placeholder="ex. 1 car 1 Truck 1 trailer 24ft Kodiak Tent 10by14ft " aria-describedby="basic-addon2">
                     </div>
                 </div>
             </div>
@@ -174,12 +175,12 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="pb-2 pt-2"><strong>City</strong></div>
-                        <input type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control"  name="city" aria-label="Recipient's username" aria-describedby="basic-addon2">
 
                     </div>
                     <div class="col-3 pt-2">
-                        <label for="Camp Mandatory Donation" class="form-label "><strong>Camp Manditory Donation Per/Human</strong></label>
-                                        <select name="state" id="state2" class="form-select">
+                        <label for="Camp Mandatory Donation" name="donation" class="form-label "><strong>Camp Manditory Donation Per/Human</strong></label>
+                                        <select name="arrival-strike" id="state2" class="form-select">
                                             <option selected>Pick a Option</option>
                                             <option value="value1">Early Arrival, Build, Strike 350$</option>
                                             <option value="value2">Early Arrival, Build, NO STRIKE 450$</option>
@@ -189,7 +190,7 @@
                     </div>
                     <div class="col-3">
                         <div class="pb-2 pt-2"><strong>Early Arrival? Yes/No + How Many </strong></div>
-                        <input type="text" class="form-control" placeholder="Yes 3 Friday Aug 23rd or No"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" name="early-arrival" class="form-control" placeholder="Yes 3 Friday Aug 23rd or No"  aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
                 </div>
             </div>
@@ -223,7 +224,7 @@
                         <div class="col-md-auto">
                             <p><strong>Why do you want to go to Burning Man?</strong>
                             </p>
-                            <textarea  class="comments form-control" rows="4"></textarea>
+                            <textarea name="why-do-you-want-to-go" class="comments form-control" rows="4"></textarea>
                         </div>
                         <p class="pt-2"> <strong>Mandatory Donations</strong> </p>
                         <p> 2 Handles, 4 Chasers for Bar </p>
@@ -240,11 +241,12 @@
             <div class="container pb-2 bg-light border">
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-2">
                     <button class="btn btn-success me-md-2" type="button">Cancel</button>
-                    <button class="btn btn-primary" type="button">Send</button>
+                    <button class="btn btn-primary" type="submit">Submit</button>
                 </div>
             </div>
             <!-- Footer -->
         </div>
+        </form>
       </div>
       <!-- Form-End -->
     </div>

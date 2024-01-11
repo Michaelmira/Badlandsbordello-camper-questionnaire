@@ -22,7 +22,9 @@ window.onload = function() {
       const arrivalDonation = document.getElementById("arrivalDonation");
       const selectedOption = arrivalDonation.options[arrivalDonation.selectedIndex].value
       const early = document.getElementById("early").value;
-      const why = document.getElementById("why").value;
+      const whyTextArea = document.getElementById("why");
+      const why = whyTextArea.value;
+
   
       if (name.trim() === "") {
         alert("Please enter your name");
@@ -49,19 +51,26 @@ window.onload = function() {
         alert("please enter if 'Would you like to sign up as a leader'");
         return false;
       }
-      if (early.trim() === "") {
-        alert("please enter if 'Are arriving early or not'");
-        return false;
-      }
-  
-      if (why.trim() === "") {
-        alert("please enter if 'Are arriving early or not'");
-        return false;
-      }
-  
       if (selectedOption === "" || selectedOption === "Pick a Option" ) {
         alert("please select a donation option'");
         return false;
+      }
+      if (early.trim() === "") {
+        alert("please let us know if you will be arriving early or not'");
+        return false;
+      }
+      if (why.trim() === "") {
+        alert("Please enter why you want to go.");
+        return false;
+      }
+      
+      const wordCount = why.split(/\s+/).filter(function (word) {
+          return word.length > 0;
+      }).length;
+      
+      if (wordCount < 10) {
+          alert("Please enter more than 10 words in the 'Why do you want to go?' field.");
+          return false;
       }
   
       return true;

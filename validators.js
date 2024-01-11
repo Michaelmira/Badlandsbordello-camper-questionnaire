@@ -17,6 +17,12 @@ window.onload = function() {
       const phone = document.getElementById("phone").value;
       const email = document.getElementById("email-address").value;
       const campers = document.getElementById("campers").value;
+      const space = document.getElementById("space").value;
+      const leader = document.getElementById("leader").value;
+      const arrivalDonation = document.getElementById("arrivalDonation");
+      const selectedOption = arrivalDonation.options[arrivalDonation.selectedIndex].value
+      const early = document.getElementById("early").value;
+      const why = document.getElementById("why").value;
   
       if (name.trim() === "") {
         alert("Please enter your name");
@@ -33,6 +39,28 @@ window.onload = function() {
   
       if (campers.trim() === "") {
         alert("please enter in 'Names of campers in your Dwelling'");
+        return false;
+      }
+      if (space.trim() === "") {
+        alert("please enter in 'Your Space Requirement'");
+        return false;
+      }
+      if (leader.trim() === "") {
+        alert("please enter if 'Would you like to sign up as a leader'");
+        return false;
+      }
+      if (early.trim() === "") {
+        alert("please enter if 'Are arriving early or not'");
+        return false;
+      }
+  
+      if (why.trim() === "") {
+        alert("please enter if 'Are arriving early or not'");
+        return false;
+      }
+  
+      if (selectedOption === "" || selectedOption === "Pick a Option" ) {
+        alert("please select a donation option'");
         return false;
       }
   

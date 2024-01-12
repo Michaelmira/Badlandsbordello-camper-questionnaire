@@ -3,13 +3,19 @@ window.onload = function() {
     console.log("Hello Rigo from the console!");
   
     const form = document.getElementById("badlands-form");
+    const dangerAlert = document.getElementById("danger-alert");
+
     form.addEventListener("submit", function(event) {
       event.stopPropagation();
       event.preventDefault();
       if (validateForm()) {
         alert("form submitted sucessfully!");
         form.reset();
-      }
+        dangerAlert.style.display = "none"; //HIDE DANGER ALERT
+      } else { 
+        dangerAlert.style.display = "block"; //SHOW DANGER ALERT
+        }
+
     });
   
     function validateForm() {
@@ -24,7 +30,14 @@ window.onload = function() {
       const early = document.getElementById("early").value;
       const whyTextArea = document.getElementById("why");
       const why = whyTextArea.value;
+      const formFields = ["full-name","phone","email-address","campers","space","leader","arrivalDonation","early","why"];
+      const isAllFieldsFilled = formFields.every(fieldId => {
+        const fieldValue = document.getElementById(fieldId).value.trim();
+        return fieldValue !== "";
 
+      });
+
+      
   
       if (name.trim() === "") {
         alert("Please enter your name");

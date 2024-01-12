@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- Navbar-Start -->
-    <nav class="navbar navbar-expand-lg bg-light mb-2 pt-1 pb-0">
+    <nav class="navbar navbar-expand-lg mb-2 pt-1 pb-0">
         <div class="container-fluid">
           <span class="navbar-brand text-black"
             <p class="fw-light" style="font-family:Pacifico"> Badlands Bordello</p>
@@ -18,15 +18,8 @@
             <div class="row">
               <div class="col-md-auto">
                 <button type="button" class="btn btn-success text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  Create new Post
+                  Join our Email List!
                 </button>
-                <button type="button" class="btn btn-success text-white btn-sm" onclick="showAlert()">
-                  Show Alert
-                </button>
-                <button type="button" class="btn btn-success text-white btn-sm" onclick="showAnotherAlert()">
-                  Show Alert 2
-                </button>
-  
               </div>
               <div class="col-md-auto">
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -54,7 +47,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Join Our Email List!</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -100,7 +93,7 @@
             </div>
             <div class="col">
               <div class="card-body justify-content-center">
-                <h5 class="card-title">Badlands Bordello 2024</h5>
+                <h5 class="card-title">Badlands Bordello 2024 + WAVELINK ART CAR</h5>
                 <p class="card-text"> Chill and open-minded camp that embraces adventure and welcomes anyone who wants to join in on the fun. Our members are a diverse group who share a love for new experiences and a laid-back approach to life. Whether we’re hanging out, enjoying a drink or two, or exploring the playa, we always prioritize having a good time and making meaningful connections. This year 2024 we will be hosting a Full-Bar, Djs, Events, and an Absynthe bar.<br><br>
                  Our Full bar is open Monday - Friday 1 PM - 4 PM <br>
                  We are open for Special Events Tuesday, Wednesday, Thursday 6 PM - 9 PM<br>
@@ -125,7 +118,7 @@
             <!-- Header -->
             <!-- Danger Alert -->
             <div class="container pt-4">
-                <div class="alert alert-danger" role="alert">
+                <div id="danger-alert" class="alert alert-danger" role="alert" style="display: none;">
                     Some fields are missing
                 </div>
             </div>

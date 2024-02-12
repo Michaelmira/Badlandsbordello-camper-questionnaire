@@ -1,224 +1,187 @@
-this is my index.html its linked already. using html and javascript
-
-how can i make the danger alert visually dissapear when the form is validated
-
-this is my HTML
-
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <title>Badlands Bordello Homepage</title>
-    </head>
-    <body>
-      <!-- Navbar-Start -->
-        <nav class="navbar navbar-expand-lg bg-light mb-2 pt-1 pb-0">
-            <div class="container-fluid">
-              <span class="navbar-brand text-black"
-                <p class="fw-light" style="font-family:Pacifico"> Badlands Bordello</p>
-              </span>
-              <form>
-                <div class="row">
-                  <div class="col-md-auto">
-                    <button type="button" class="btn btn-success text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Create new Post
-                    </button>
-                    <button type="button" class="btn btn-success text-white btn-sm" onclick="showAlert()">
-                      Show Alert
-                    </button>
-                    <button type="button" class="btn btn-success text-white btn-sm" onclick="showAnotherAlert()">
-                      Show Alert 2
-                    </button>
-      
-                  </div>
-                  <div class="col-md-auto">
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item dropdown ">
-                          <a class="nav-link dropdown-toggle border btn-secondary text-light btn-sm pt-0 pb-0 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-gear pt-2 pb-2"></i>
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                            <li><a class="dropdown-item" href="#">Security and Data</a></li>
-                            <li><a class="dropdown-item" href="#">Log out</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-      
-      <!-- Modal-Start -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="form-group mb-2 mt-0">
-                    <form class="mb-1">
-                      <label for="exampleInputEmail1">Caption:</label>
-                    </form>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add the caption of your post here">
-                  </div>
-                  <i class="fas fa-camera fa-1x border btn"></i>
-                  <i class="fas fa-map-marker-alt fa-1x border btn"></i>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success">Publish</button>
-                </div>
-              </div>
-            </div>
+<div class="container text-center d-flex justify-content-center">
+  <div class="card mb-3 border border-0" >
+    <div class="row g-0">
+      <div class="col-6">
+        <img class="bbimage" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/419133452_2096650677351088_3133746473650414348_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c42490&_nc_ohc=0clWuWyspV8AX8rUH97&_nc_ht=scontent-sjc3-1.xx&oh=00_AfDzIVKTxHTcNINUG_UQnWCmk2aLxL5ZJdHwf05juBYW1A&oe=65A6AB68">
+      </div>
+      <div class="col">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Badlands Bordello 2024 + WAVELINK ART CAR</h5>
+          <p class="card-text"> Chill and open-minded camp that embraces adventure and welcomes anyone who wants to join in on the fun. Our members are a diverse group who share a love for new experiences and a laid-back approach to life. Whether we’re hanging out, enjoying a drink or two, or exploring the playa, we always prioritize having a good time and making meaningful connections. This year 2024 we will be hosting a Full-Bar, Djs, Events, and an Absynthe bar.<br><br>
+           Our Full bar is open Monday - Friday 1 PM - 4 PM <br>
+           We are open for Special Events Tuesday, Wednesday, Thursday 6 PM - 9 PM<br>
+          </p>
+          <p class="card-text"><small class="text-body-secondary">Pre-Build August 23th Friday - Satuday - Sunday - Monday August 26th <br> 
+            Strike Saturday Aug 31 - Sunday Sep 1st </small></p>
+          <p class="card-text"><small class="text-body-secondary">We will be supplying a brand new Shower 2024, grey water removal, and a charging station  </small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card END -->
+<!-- Form-Start -->
+<div class="container pt-4">
+  <form id="badlands-form">
+    <div class="card">
+      <!-- Header -->
+      <div class="card-header">
+        <strong class="fs-4">Badlands Bordello Camper Application</strong>
+      </div>
+      <!-- Header -->
+      <!-- Danger Alert -->
+      <div class="container pt-4">
+          <div id="danger-alert" class="alert alert-danger" role="alert" style="display: none;">
+              Some fields are missing
           </div>
-      <!-- Modal-End -->
-        </nav>
-    <!-- Navbar-End -->
-    <!-- PILL-Start -->
-    <div class="container-fluid p-0">
-      <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Camper Questionnaire</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Gallery</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <!-- Camper Questionnaire-Start -->
-        <div class="tab-pane fade show active mt-1" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <!-- Card-Start -->
-          <div class="container text-center d-flex justify-content-center">
-          
-            <div class="card mb-3 border border-0" >
-              <div class="row g-0">
-                <div class="col">
-                  <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/275248570_10224330414662351_5548022285287678580_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=173fa1&_nc_ohc=BuUB7jnXPvAAX9INL96&_nc_ht=scontent-sjc3-1.xx&oh=00_AfBJHIdrBt4bjmvFKnPyMIARDA9-EdmBphRuTtfVg61mXw&oe=65A1F485" class="bbimage rounded-start" alt="...">
-                </div>
-                <div class="col">
-                  <div class="card-body justify-content-center">
-                    <h5 class="card-title">Badlands Bordello 2024</h5>
-                    <p class="card-text"> Chill and open-minded camp that embraces adventure and welcomes anyone who wants to join in on the fun. Our members are a diverse group who share a love for new experiences and a laid-back approach to life. Whether we’re hanging out, enjoying a drink or two, or exploring the playa, we always prioritize having a good time and making meaningful connections. This year 2024 we will be hosting a Full-Bar, Djs, Events, and an Absynthe bar.<br><br>
-                     Our Full bar is open Monday - Friday 1 PM - 4 PM <br>
-                     We are open for Special Events Tuesday, Wednesday, Thursday 6 PM - 9 PM<br>
-                    </p>
-                    <p class="card-text"><small class="text-body-secondary">Pre-Build August 23th Friday - Satuday - Sunday - Monday August 26th <br> 
-                      Strike Saturday Aug 31 - Sunday Sep 1st </small></p>
-                    <p class="card-text"><small class="text-body-secondary">We will be supplying a brand new Shower 2024, grey water removal, and a charging station  </small></p>
+      </div>
+      <!-- Danger Alert -->
+      <!-- Full Name, Phone, Email Inputs START -->
+      <div class="container">
+          <div class="row">
+              <div class="col-5">
+                  <div class="card-text" ><strong>Full Name</strong></div>
+                  <div class="row">
+                      <div class="input-group mb-3">
+                          <input type="text" name="full-name" id="full-name" class="form-control" placeholder="First, Last." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
                   </div>
-                </div>
               </div>
-            </div>
+              <div class="col-3">
+                  <div class="cvc-text" ><strong> Phone Number </strong></div>
+                  <div class="row">
+                      <div class="input-group mb-3">
+                          <input type="text" name="phone" id="phone" class="form-control" placeholder="(000)000-0000" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="amount-text"><strong>Burner Account Email</strong></div>
+                  <div class="row">
+                      <div class="input-group mb-3">
+                          <input type="text" name="email-address" id="email-address" class="form-control" placeholder="Burner Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      </div>
+                  </div>
+              </div>
           </div>
-          <!-- Card-End -->
-          <!-- Form-Start -->
-          <div class="container pt-4">
-            <form id="badlands-form">
-              <div class="card">
-                <!-- Header -->
-                <div class="card-header">
-                  <strong class="fs-4">Badlands Bordello Camper Application</strong>
-                </div>
-                <!-- Header -->
-                <!-- Danger Alert -->
-                <div class="container pt-4">
-                    <div class="alert alert-danger" role="alert">
-                        Some fields are missing
-                    </div>
-                </div>
+      </div>
+      <!-- Full Name, Phone, Email Inputs END -->
+      <!-- Campers and Dwelling Inputs START -->
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <div class= "pb-2" ><strong>Names Of Campers In Your Dwelling</strong></div>
+                  <input type="text" class="form-control" name="campers" id="campers" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+              </div>
+              <div class="col-6">
+                  <div class="pb-2"><strong>Space requirement for Dwelling, Cars, RV, Etc.</strong></div>
+                  <input type="text" class="form-control" name="space" id="space" aria-label="Recipient's username" placeholder="ex. 1 car 1 Truck 1 trailer 24ft Kodiak Tent 10by14ft " aria-describedby="basic-addon2">
+              </div>
+          </div>
+      </div>
+      <!-- Campers and Dwelling Inputs END -->
+      <!-- Leader, Donation, Early arrival START -->
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <div class="pb-2 pt-2"><strong>Would you like to sign up as a leader in creating and decorating your own themed 12by12 Sideroom.</strong></div>
+                  <input type="text" class="form-control"  name="leader" id="leader" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+              </div>
+              <div class="col-3 pt-2">
+                  <label for="Camp Mandatory Donation" name="arrivalDonation" class="form-label" ><strong>Camp Manditory Donation Per/Human</strong></label>
+                                  <select name="arrival-strike" id="arrivalDonation" class="form-select">
+                                      <option selected>Pick a Option</option>
+                                      <option value="value1">Early Arrival, Build, Strike 350$</option>
+                                      <option value="value2">Early Arrival, Build, NO STRIKE 450$</option>
+                                      <option value="value3">Strike ONLY 450$</option>
+                                      <option value="value3">NO WORK 550$</option>
+                                    </select>
+              </div>
+              <div class="col-3">
+                  <div class="pb-2 pt-2"><strong>Early Arrival? Yes/No + How Many </strong></div>
+                  <input type="text" name="early" id="early" class="form-control" placeholder="Yes 3 Friday Aug 23rd or No"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+              </div>
+          </div>
+      </div>
+      <!-- Leader, Donation, Early arrival START -->
+      <!--We accept: and Message:-->
+      <div class="container pt-2 pb-3"> 
+          <div class="row">
+              <div class="col-6">
+                  <div class="col-6">
+                    <p class="pt-2"> <strong>Mandatory Donations</strong> </p>
+                    <p> 2 Handles, 4 Chasers for Bar </p>
+                    <p> 5 Gallons water for Bar </p>
+                    <p> 2 Camp Shifts </p>
+                    <p> 2 Events Shifts </p>
+                  </div>
+                  <div class="col-6"></div>
+              </div>
+              <div class="col-6">
+                  <div class="col-md-auto">
+                      <p><strong>Why do you want to go to Burning Man?</strong>
+                      </p>
+                      <textarea name="why-do-you-want-to-go" id="why" class="comments form-control" rows="4"></textarea>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--We accept: and Message:-->
+      <!-- Footer  -->
+      <div class="container pb-2 bg-light border">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-2">
+              <button class="btn btn-success me-md-2" type="button">Cancel</button>
+              <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+      </div>
+    </div>
+  </form>      
+</div>
+      <!-- Footer -->
+
+<!-- Form-End -->
 
 
+<div class="tab-pane fade show active mt-1" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <div class="row">
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?random=4" </img>
+    </div>
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?random=5
+      " </img>
+    </div>
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?random=3" </img>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?random=1" </img>
+    </div>
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?random=6" </img>
+    </div>
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?blur
+      " </img>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?random=7
+      " </img>
+    </div>
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?random=2" </img>
+    </div>
+    <div class="col border p-0 pb-1">
+      <img src="https://picsum.photos/508/508?grayscale" </img>
+    </div>
+  </div>
+</div>
 
-                Here is my javascript
-                window.onload = function() {
-                    //write your code here
-                    console.log("Hello Rigo from the console!");
-                  
-                    const form = document.getElementById("badlands-form");
-                    form.addEventListener("submit", function(event) {
-                      event.stopPropagation();
-                      event.preventDefault();
-                      if (validateForm()) {
-                        alert("form submitted sucessfully!");
-                        form.reset();
-                      }
-                    });
-                  
-                    function validateForm() {
-                      const name = document.getElementById("full-name").value;
-                      const phone = document.getElementById("phone").value;
-                      const email = document.getElementById("email-address").value;
-                      const campers = document.getElementById("campers").value;
-                      const space = document.getElementById("space").value;
-                      const leader = document.getElementById("leader").value;
-                      const arrivalDonation = document.getElementById("arrivalDonation");
-                      const selectedOption = arrivalDonation.options[arrivalDonation.selectedIndex].value
-                      const early = document.getElementById("early").value;
-                      const whyTextArea = document.getElementById("why");
-                      const why = whyTextArea.value;
-                
-                  
-                      if (name.trim() === "") {
-                        alert("Please enter your name");
-                        return false;
-                      }
-                  
-                      if (phone.trim() === "") {
-                        alert("Please enter your phone number");
-                        return false;
-                      } else if (!isValidEmail(email)) {
-                        alert("please enter a valid email address.");
-                        return false;
-                      }
-                  
-                      if (campers.trim() === "") {
-                        alert("please enter in 'Names of campers in your Dwelling'");
-                        return false;
-                      }
-                      if (space.trim() === "") {
-                        alert("please enter in 'Your Space Requirement'");
-                        return false;
-                      }
-                      if (leader.trim() === "") {
-                        alert("please enter if 'Would you like to sign up as a leader'");
-                        return false;
-                      }
-                      if (selectedOption === "" || selectedOption === "Pick a Option" ) {
-                        alert("please select a donation option'");
-                        return false;
-                      }
-                      if (early.trim() === "") {
-                        alert("please let us know if you will be arriving early or not'");
-                        return false;
-                      }
-                      if (why.trim() === "") {
-                        alert("Please enter why you want to go.");
-                        return false;
-                      }
-                      
-                      const wordCount = why.split(/\s+/).filter(function (word) {
-                          return word.length > 0;
-                      }).length;
-                      
-                      if (wordCount < 10) {
-                          alert("Please enter more than 10 words in the 'Why do you want to go?' field.");
-                          return false;
-                      }
-                  
-                      return true;
-                    }
-                  
-                    function isValidEmail(email) {
-                      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                      return emailPattern.test(email);
-                    }
-                  };
+
+let name = variables.name === null ? "" :variables.name;

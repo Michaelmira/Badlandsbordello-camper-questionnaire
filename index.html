@@ -11,7 +11,7 @@
   <!-- Navbar-Start -->
     <nav class="navbar navbar-expand-lg mb-2 pt-1 pb-0">
         <div class="container-fluid">
-          <span class="navbar-brand text-black"
+          <span class="navbar-brand text-black">
             <p class="fw-light" style="font-family:Pacifico"> Badlands Bordello</p>
           </span>
           <form>
@@ -53,9 +53,10 @@
             <div class="modal-body">
               <div class="form-group mb-2 mt-0">
                 <form class="mb-1">
-                  <label for="exampleInputEmail1">Caption:</label>
+                  <label for="exampleInputEmail1">Your Full Name and Email</label>
                 </form>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add the caption of your post here">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Full Name">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email Here">
               </div>
               <i class="fas fa-camera fa-1x border btn"></i>
               <i class="fas fa-map-marker-alt fa-1x border btn"></i>
@@ -74,22 +75,21 @@
 <div class="container-fluid p-0">
   <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Camper Questionnaire</button>
+      <button class="nav-link active" id="question-tab" data-bs-toggle="tab" data-bs-target="#question" type="button" role="tab" aria-controls="question" aria-selected="true">Camper Questionnaire</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Gallery</button>
+      <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="false">Gallery</button>
     </li>
   </ul>
   <div class="tab-content" id="myTabContent">
     <!-- Camper Questionnaire-Start -->
-    <div class="tab-pane fade show active mt-1" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <!-- Card-Start -->
+    <!-- Card Start -->
+    <div class="tab-pane fade show active mt-1" id="question" role="tabpanel" aria-labelledby="question">
       <div class="container text-center d-flex justify-content-center">
-      
         <div class="card mb-3 border border-0" >
           <div class="row g-0">
-            <div class="col">
-              <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/275248570_10224330414662351_5548022285287678580_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=173fa1&_nc_ohc=BuUB7jnXPvAAX9INL96&_nc_ht=scontent-sjc3-1.xx&oh=00_AfBJHIdrBt4bjmvFKnPyMIARDA9-EdmBphRuTtfVg61mXw&oe=65A1F485" class="bbimage rounded-start" alt="...">
+            <div class="col-6">
+              <img class="bbimage" src="https://i.ibb.co/kxcpbHv/0group-Photo2023.jpg">
             </div>
             <div class="col">
               <div class="card-body justify-content-center">
@@ -106,7 +106,7 @@
           </div>
         </div>
       </div>
-      <!-- Card-End -->
+      <!-- Card END -->
       <!-- Form-Start -->
       <div class="container pt-4">
         <form id="badlands-form">
@@ -123,7 +123,7 @@
                 </div>
             </div>
             <!-- Danger Alert -->
-            <!-- First Name & Last Name Inputs START -->
+            <!-- Full Name, Phone, Email Inputs START -->
             <div class="container">
                 <div class="row">
                     <div class="col-5">
@@ -146,13 +146,13 @@
                         <div class="amount-text"><strong>Burner Account Email</strong></div>
                         <div class="row">
                             <div class="input-group mb-3">
-                                <strong>$</strong><input type="text" name="email-address" id="email-address" class="form-control" placeholder="Burner Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input type="text" name="email-address" id="email-address" class="form-control" placeholder="Burner Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- First Name & Last Name Inputs END -->
+            <!-- Full Name, Phone, Email Inputs END -->
             <!-- Campers and Dwelling Inputs START -->
             <div class="container">
                 <div class="row">
@@ -226,59 +226,104 @@
           </div>
         </form>      
       </div>
+    </div>
             <!-- Footer -->
-      
-    </div>
       <!-- Form-End -->
-    </div>
     <!-- Camper Questionnaire-End -->
     <!-- Gallery-Start -->
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?random=4" </img>
-            </div>
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?random=5
-              " </img>
-            </div>
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?random=3" </img>
-            </div>
+    <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery">
+      <div class="container-fluid text-center d-flex justify-content-center">
+        <div class="row">
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/fX4M85f/1frontage2017.jpg" </img>
           </div>
-          <div class="row">
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?random=1" </img>
-            </div>
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?random=6" </img>
-            </div>
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?blur
-              " </img>
-            </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/YjqzBD0/2groupphoto2017.jpg" </img>
           </div>
-          <div class="row">
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?random=7
-              " </img>
-            </div>
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?random=2" </img>
-            </div>
-            <div class="col border p-0 pb-1">
-              <img src="https://picsum.photos/508/508?grayscale" </img>
-            </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/NZHMBKp/3-Wavelink1.jpg" </img>
           </div>
+        </div>
+        <div class="row">
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic"  src="https://i.ibb.co/qpz2DD6/4-Interiorparty.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/fNYnQYq/5photoOp.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/ryXdZnX/6-Wavelink2.jpg" </img>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/kyBS1dY/7-Wavelink3.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/L82LC25/8-Frontage-And-Wavelink.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/Y23Vcnb/9-Interior1.jpg" </img>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center d-flex justify-content-center">
+        <div class="row">
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/F3KJ03P/10-Wavelink4.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/z7QPcBN/11-Interior2.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/bvYrFWX/12-Wavelink5.jpg" </img>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/nRk87X1/13-Interior3.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/h977Gf6/14-Waveline-And-Disco-Fish.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/9VpP4BC/15-Door-Solo.jpg" </img>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/1XZXgd8/16-Interior4.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/C1ywVGz/17-interior5.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/0hMfBWJ/18interior6.jpg" </img>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center d-flex justify-content-center">
+        <div class="row">
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/J3MWb4L/19interior7.jpg
+            " </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/26HWv5x/20people.jpg" </img>
+          </div>
+          <div class="col border p-0 pb-1">
+            <img class="bbGalleryPic" src="https://i.ibb.co/wK6fN3v/21people2.jpg" </img>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Gallery-End -->
   </div>
 </div>
 <!-- PILL-End -->
-</body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="validators.js"></script>
+</body>
+
 </html>
